@@ -1,0 +1,1 @@
+- hosts: webbecome: yestasks:- name: Install Apache and PHPyum:name:- httpd- php- php-mysqlndstate: present- name: Start Apacheservice:name: httpdstate: startedenabled: yes- name: Deploy Applicationcopy:src: ../app/dest: /var/www/html/
